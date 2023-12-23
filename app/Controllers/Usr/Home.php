@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         header("Location: /home/home");
         exit;
