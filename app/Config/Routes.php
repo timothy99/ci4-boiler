@@ -12,3 +12,4 @@ $routes->get("/member", "Usr\Member::index");
 $routes->get("/member/myinfo", "Usr\Member::myinfo");
 $routes->get("/member/login", "Usr\Member::login");
 $routes->get("/member/join", "Usr\Member::join");
+$routes->post("/member/signin", "Usr\Member::signin");

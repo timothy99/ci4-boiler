@@ -28,7 +28,15 @@ class Member extends BaseController
     // 회원가입
     public function join()
     {
-        return uview("/usr/member/join");
+        $data = array();
+        $data["uri"] = $this->request->getUri()->getPath();
+        return uview("/usr/member/join", $data);
+    }
+
+    // 회원가입
+    public function signin()
+    {
+        logMessage($this->request->getPost());
     }
 
 }
