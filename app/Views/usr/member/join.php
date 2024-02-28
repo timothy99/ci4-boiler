@@ -68,23 +68,7 @@
 <script>
     $(function() {
         $("#signin").click(function() {
-            $.ajax({
-                url: "/member/signin",
-                type: "POST",
-                dataType: "json",
-                async: true,
-                data: $("#frm").serialize(),
-                success: function(proc_result) {
-                    // var result = proc_result.result;
-                    // var message = proc_result.message;
-                    // var user_referer = proc_result.user_referer;
-                    // if(result == true) {
-                    //     location.href = user_referer;
-                    // } else {
-                    //     alert(message);
-                    // }
-                }
-            });
+            ajax1("/member/signin", "frm");
         });
     });
 </script>

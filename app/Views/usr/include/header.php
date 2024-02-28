@@ -37,6 +37,7 @@
 
         <!-- Template Javascript -->
         <script src="/usr/js/main.js"></script>
+        <script src="/usr/js/ajax.js"></script>
 
         <!-- User Javascript -->
 <?php   if ($uri == "/member/join") { // 회원가입일때 우편번호 검색 스크립트 로딩 ?>
